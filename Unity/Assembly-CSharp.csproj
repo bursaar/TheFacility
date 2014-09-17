@@ -64,8 +64,10 @@
      <Compile Include="Assets\Fungus\Dialog\Commands\AddOption.cs" />
      <Compile Include="Assets\Fungus\Dialog\Commands\Choose.cs" />
      <Compile Include="Assets\Fungus\Dialog\Commands\Say.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Commands\SetBackground.cs" />
      <Compile Include="Assets\Fungus\Dialog\Commands\SetChooseDialog.cs" />
      <Compile Include="Assets\Fungus\Dialog\Commands\SetSayDialog.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\Background.cs" />
      <Compile Include="Assets\Fungus\Dialog\Scripts\Character.cs" />
      <Compile Include="Assets\Fungus\Dialog\Scripts\ChooseDialog.cs" />
      <Compile Include="Assets\Fungus\Dialog\Scripts\Dialog.cs" />
