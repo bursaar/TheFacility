@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Fungus\Animation\Commands\SetAnimBool.cs" />
+     <Compile Include="Assets\Fungus\Animation\Commands\SetAnimFloat.cs" />
+     <Compile Include="Assets\Fungus\Animation\Commands\SetAnimInteger.cs" />
+     <Compile Include="Assets\Fungus\Animation\Commands\SetAnimTrigger.cs" />
+     <Compile Include="Assets\Fungus\Audio\Commands\PlayMusic.cs" />
+     <Compile Include="Assets\Fungus\Audio\Commands\PlaySound.cs" />
+     <Compile Include="Assets\Fungus\Audio\Commands\SetMusicVolume.cs" />
+     <Compile Include="Assets\Fungus\Audio\Commands\StopMusic.cs" />
+     <Compile Include="Assets\Fungus\Audio\Scripts\MusicController.cs" />
+     <Compile Include="Assets\Fungus\Camera\Commands\FadeScreen.cs" />
+     <Compile Include="Assets\Fungus\Camera\Commands\FadeToView.cs" />
+     <Compile Include="Assets\Fungus\Camera\Commands\MoveToView.cs" />
+     <Compile Include="Assets\Fungus\Camera\Commands\ShakeCamera.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Fungus\Camera\Scripts\View.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Commands\AddOption.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Commands\Choose.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Commands\Say.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Commands\SetChooseDialog.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Commands\SetSayDialog.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\Character.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\ChooseDialog.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\Dialog.cs" />
+     <Compile Include="Assets\Fungus\Dialog\Scripts\SayDialog.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Commands\Call.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Commands\Else.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Commands\EndIf.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Commands\If.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Commands\LoadGlobals.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Commands\LoadScene.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Commands\Note.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Commands\SaveGlobals.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Commands\SetActive.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Commands\SetVariable.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Commands\Wait.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\BooleanVariable.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Command.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\FloatVariable.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\FungusScript.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\GlobalVariables.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\IntegerVariable.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\SceneLoader.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Sequence.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\StringVariable.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\StringsParser.cs" />
+     <Compile Include="Assets\Fungus\FungusScript\Scripts\Variable.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Commands\FadeSprite.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Commands\ShowSprite.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\Parallax.cs" />
+     <Compile Include="Assets\Fungus\Sprite\Scripts\SpriteFader.cs" />
+     <Compile Include="Assets\Fungus\Thirdparty\iTween\iTween.cs" />
+     <None Include="Assets\Example\Sprites\Attribution.txt" />
+     <None Include="Assets\Fungus\Thirdparty\ReorderableListField\README.txt" />
+     <None Include="Assets\Fungus\Dialog\Fonts\Amaranth\SIL Open Font License.txt" />
+     <None Include="Assets\Fungus\Thirdparty\ReorderableListField\LICENSE.txt" />
+     <None Include="Assets\Fungus\Dialog\Sprites\Attribution.txt" />
+     <None Include="Assets\Fungus\Thirdparty\ReorderableListField\Editor\Editor.ReorderableList.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
